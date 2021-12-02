@@ -12,10 +12,39 @@
     />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
-
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">ice cream made with <span class="passion"></span> passion</h1>
+          <ul class="hero-btn">
+            <li class="hero-btn__item">
+              <button class="btn" type="button"><a href="#Products">Products</a></button>
+            </li>
+            <li class="hero-btn__item">
+              <button class="btn" type="button"><a href="#About">How it’s made?</a></button>
+            </li>
+          </ul>
+          <div>
+            <p >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <img src="#" alt="milk in a jug" />
+            <div>
+              <ul class="">
+                <li class="">
+                  <h3 class="">16</h3>
+                  <p>cafes</p>
+                </li>
+                <li class="">
+                  <h3 class="">23</h3>
+                  <p>food trucks</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
