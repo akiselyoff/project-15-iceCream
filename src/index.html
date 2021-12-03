@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Заголовок страницы ПРИВЕТ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,54 +16,16 @@
     />
   </head>
   <body>
-    <main>
-      <section class="hero">
-        <div class="hero-container">
-          <h1 class="hero-container__title">
-          <span class="hero-container__portail1">ice cream made with</span> 
-          <span class="hero-container__pjrtail2"> passion</span>
-          </h1>
-          <ul class="hero-nav">
-            <li class="hero-nav__item">
-              <button class="hero-nav__button" type="button" onclick="location.href='#product'">
-                Products
-              </button>
-            </li>
-            <li class="hero-nav__item">
-              <button class="hero-nav__button" type="button" onclick="location.href='#product'">
-               How it’s made?
-              </button>
-            </li>
-          </ul>
-          <div class="hero-eco">
-            <ul class="hero-eco__list">
-              <li class="hero-eco__item">
-                <img scr="" alt="milk on cup" />
-            <p class="hero-eco__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et</p>
-              <a href="#" class="hero-eco__link">
-                <svg class="hero-eco__link" width="20" height="20">
-                      <use href=""></use>
-                    </svg>
-                  </a>
-                </li>
-                </ul>
-          </div>
-          <div class="company-about">
-                <p class=" company-about_num">16</p>
-                <p class=" company-about__text">cafes</p>
-                </div>
-             <div class="company-about">
-                <p class="company-about_num">23</p>
-                <p class=" company-about__text">food trucks</p>
-          </div>
-          <div class="hero__circle"></div>
-          <picture class="ice-cream-pic">
-            <img scr="" alt=""/>
-          </picture>
-        </div>
-      </section>
-    </main>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
   </body>
 </html>

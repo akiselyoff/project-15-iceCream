@@ -5,3 +5,22 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
+
+/* Base*/
+@import './base/fonts';
+@import './base/common';
+@import './base/container';
+
+/* Utils*/
+@import './utils/visually-hidden';
+
+/*Layout*/
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer';
+@import './layout/contacts';
+@import './layout/footer';
