@@ -2,23 +2,35 @@
   position: relative;
   background-color: #ffb8ca;
 }
-.hero-container {
+.hero__title-container {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 1050px;
-  height: 665px;
+  margin-top: 137px;
   z-index: 1;
-  padding: 6px 20px 0px 20px;
 
-  &__title {
-    width: 218px;
-    display: flex;
-    // margin-top: 84px;
-    flex-direction: column;
+  @media screen and (min-width: 480px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1199px) {
+    left: 69px;
+    margin-top: 84px;
   }
 }
 
+.hero-container__title {
+  width: 218px;
+  font-family: 'Titan One';
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 320px) {
+    width: 162px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 277px;
+  }
+}
 .hero-container__portail1 {
   font-family: var(--secondary-font-family);
   font-style: normal;
@@ -80,15 +92,15 @@
   }
 }
 .hero__circle {
-  width: 538px;
-  height: 538px;
-  border-radius: 50%;
-  background-color: #ffa5ba;
-  position: absolute;
-  //   top: 80px;
-  right: 275px;
+ width: 346px;
+		height: 344px;
+		border-radius: 50%;
+		background-color: #FFA5BA;
+		position: absolute;
+		top: 80px;
+		right: -50px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 767px) {
     width: 324px;
     height: 322px;
     top: 30px;
