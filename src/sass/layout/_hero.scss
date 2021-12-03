@@ -3,7 +3,9 @@
 }
 .hero-container {
   position: relative;
-  height: 578px;
+  width: 1050px;
+  height: 665px;
+  padding: 0;
 
   &__title {
     display: flex;
@@ -40,6 +42,7 @@
   border-radius: 20px;
   border: none;
   margin-right: 17px;
+  margin-bottom: 56px;
 }
 .hero__title-button2 {
   width: 138px;
@@ -49,3 +52,99 @@
   border-radius: 20px;
   border: none;
 }
+.hero__avd-card {
+  display: flex;
+  text-align: center;
+}
+.hero-composition {
+  justify-content: center;
+  width: 200px;
+  height: 78px;
+  margin-bottom: 20px;
+
+  &__text {
+    font-family: var(--primary-font-family);
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+.hero__circle {
+  width: 538px;
+  height: 538px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  position: absolute;
+  top: 80px;
+  right: 275px;
+}
+.company-about-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  margin-bottom: 18px;
+
+  &__num {
+    font-family: var(--secondary-font-family);
+    color: #d41443;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 53px;
+    text-align: right;
+    position: relative;
+  }
+
+  &__text {
+    font-family: var(--primary-font-family);
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+  }
+}
+.company-about-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 155px;
+  right: 40px;
+
+  &__num {
+    font-family: var(--secondary-font-family);
+    color: #d41443;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 53px;
+    text-align: right;
+    position: relative;
+  }
+
+  &__text {
+    font-family: var(--primary-font-family);
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+  }
+}
+.company-about-1__circle {
+  color: #fff;
+}
+.ice-cream-pic {
+  position: absolute;
+  bottom: 0px;
+  right: 450px;
+}
+
