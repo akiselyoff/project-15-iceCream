@@ -4,7 +4,7 @@
     "sources": [
         "main.scss",
         "_example.scss",
-        "_fonts.scss"
+        "base/_fonts.scss"
     ],
     "names": [],
     "file": "main.css"
