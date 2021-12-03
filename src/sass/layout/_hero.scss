@@ -1,15 +1,20 @@
 .hero {
+  position: relative;
   background-color: #ffb8ca;
 }
 .hero-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 1050px;
   height: 665px;
-  padding: 0;
+  z-index: 1;
+  padding: 6px 20px 0px 20px;
 
   &__title {
+    width: 218px;
     display: flex;
-    margin-bottom: 25px;
+    // margin-top: 84px;
     flex-direction: column;
   }
 }
@@ -20,7 +25,6 @@
   font-weight: normal;
   font-size: 38px;
   line-height: 44px;
-  letter-spacing: 0.04em;
   color: #ffffff;
 }
 .hero-container__pjrtail2 {
@@ -31,6 +35,7 @@
   line-height: 53px;
   letter-spacing: 0.04em;
   color: #d41443;
+  margin-bottom: 25px;
 }
 .hero__title-buttons {
   display: flex;
@@ -42,7 +47,6 @@
   border-radius: 20px;
   border: none;
   margin-right: 17px;
-  margin-bottom: 56px;
 }
 .hero__title-button2 {
   width: 138px;
@@ -54,13 +58,16 @@
 }
 .hero__avd-card {
   display: flex;
-  text-align: center;
 }
 .hero-composition {
   justify-content: center;
   width: 200px;
   height: 78px;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   &__text {
     font-family: var(--primary-font-family);
@@ -69,6 +76,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 14px;
+    margin-bottom: 20px;
   }
 }
 .hero__circle {
@@ -77,9 +85,24 @@
   border-radius: 50%;
   background-color: #ffa5ba;
   position: absolute;
-  top: 80px;
+  //   top: 80px;
   right: 275px;
+
+  @media screen and (max-width: 767px) {
+    width: 324px;
+    height: 322px;
+    top: 30px;
+    right: 140px;
+  }
+
+  @media screen and (min-width: 1200) {
+    width: 538px;
+    height: 538px;
+    top: 50px;
+    left: 470px;
+  }
 }
+
 .company-about-1 {
   display: flex;
   flex-direction: column;
@@ -88,6 +111,10 @@
   top: 100px;
   right: 40px;
   margin-bottom: 18px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   &__num {
     font-family: var(--secondary-font-family);
@@ -118,6 +145,10 @@
   top: 155px;
   right: 40px;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__num {
     font-family: var(--secondary-font-family);
     color: #d41443;
@@ -139,12 +170,32 @@
     text-align: right;
   }
 }
+.milk-pic {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 .company-about-1__circle {
   color: #fff;
 }
 .ice-cream-pic {
   position: absolute;
   bottom: 0px;
-  right: 450px;
-}
+  right: 32px;
 
+  @media screen and (max-width: 767) {
+    right: 24px;
+  }
+
+  @media screen and (min-width: 1200) {
+    left: 60px;
+  }
+}
+.girl-pic {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
