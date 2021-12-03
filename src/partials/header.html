@@ -1,6 +1,25 @@
-<header>
-  <div class="container">
-    <a class="logo" href="/"></a>
+<header class="header">
+  <div class="header__container container">
+    <a class="logo" href="/">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="./images/logo-mb.png 1x, ./images/logo-mb.png 2x"
+          sizes="70vw"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/logo-mb.png 1x, ./images/logo-mb.png 2x"
+          sizes="50vw"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/logo-mb.png 1x, ./images/logo-mb.png 2x"
+          sizes="100vw"
+        />
+        <img src="#" alt="Логотип" loading="lazy" />
+      </picture>
+    </a>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item nav__item--current"><a href="">Home</a></li>
@@ -13,22 +32,22 @@
       </ul>
     </nav>
 
-    <button type="button" class="menu-button burger-btn" data-menu-open aria-controls="mobile-menu">
+    <button type="button" class="burger-btn">
       <svg
-        class="menu-button__icon"
+        class="burger-btn__icon"
         width="20"
         height="12"
         aria-label="Переключатель мобильного меню"
       >
-        <use class="burger-btn__icon" href="#"></use>
+        <use href="./images/svg/icons.svg#icon-burger"></use>
       </svg>
     </button>
     <!-- MOBILE-MENU START -->
-    <div class="mobile-menu" id="mobile-menu" data-menu>
+    <div class="mobile-menu">
       <div class="mobile-menu__container">
-        <button type="button" class="menu-button close-btn" data-menu-close>
-          <svg class="menu-button__icon" width="14" height="14">
-            <use class="close-btn__icon" href="#"></use>
+        <button type="button" class="close-btn">
+          <svg class="close-btn__icon" width="14" height="14">
+            <use href="#"></use>
           </svg>
         </button>
         <button type="button">
@@ -47,7 +66,7 @@
       </div>
     </div>
     <!-- MOBILE-MENU END -->
-    <button type="button">
+    <button class="buy-now" type="button">
       Buy now
       <svg width="4" height="8">
         <use href="#"></use>
