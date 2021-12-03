@@ -1,3 +1,23 @@
 .header {
   background-color: pink;
 }
+.header__container {
+  display: flex;
+}
+.nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.mobile-menu {
+  display: none;
+}
+.burger-btn {
+  background-color: transparent;
+}
+.burger-btn__icon {
+  fill: red;
+}
+.buy-now {
+  display: none;
+}
