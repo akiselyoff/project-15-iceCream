@@ -1,0 +1,27 @@
+.gallery {
+  background-image: linear-gradient(to bottom, #fff5f6 39%, #ffffff 39%);
+}
+
+.gallery-box {
+  display: flex;
+  flex-basis: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-item:nth-child(5) {
+  margin-top: 40px;
+}
+
+.gallery-item:nth-child(7) {
+  margin-bottom: 15px;
+}
+
+.gallery-picture {
+  border-radius: 15px;
+  margin: 4px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 25px;
+  }
+}
