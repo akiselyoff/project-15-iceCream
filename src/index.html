@@ -14,16 +14,19 @@
   <body>
     <main>
       <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">ice cream made with <span class="passion"></span> passion</h1>
+        <div class="hero-container">
+          <h1 class="hero-container__title">
+          <span class="hero-container__portail1">ice cream made with</span> 
+          <span class="hero-container__pjrtail2"> passion</span>
+          </h1>
           <ul class="hero-nav">
             <li class="hero-nav__item">
-              <button class="hero-nav__button" type="button">
+              <button class="hero-nav__button" type="button" onclick="location.href='#product'">
                 Products
               </button>
             </li>
             <li class="hero-nav__item">
-              <button class="hero-nav__button" type="button">
+              <button class="hero-nav__button" type="button" onclick="location.href='#product'">
                How it’s made?
               </button>
             </li>
@@ -43,22 +46,18 @@
                 </li>
                 </ul>
           </div>
-          <div class="hero-right">
-            <ul class=" business-list">
-              <li class=" business__item">
-                <h3 class=" business__title">16</h3>
-                <p class=" business__text">cafes</p>
-              </li>
-              <li class=" business__item">
-                <h3 class="business__title">23</h3>
-                <p class=" business__text">food trucks</p>
-              </li>
-              <li>
-                <img scr="" alt="girl so tasty"/>
-              </li>
-            </ul>
+          <div class="company-about">
+                <p class=" company-about_num">16</p>
+                <p class=" company-about__text">cafes</p>
+                </div>
+             <div class="company-about">
+                <p class="company-about_num">23</p>
+                <p class=" company-about__text">food trucks</p>
           </div>
-
+          <div class="hero__circle"></div>
+          <picture class="ice-cream-pic">
+            <img scr="" alt=""/>
+          </picture>
         </div>
       </section>
     </main>
