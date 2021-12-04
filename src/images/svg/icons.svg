@@ -10,7 +10,7 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 </symbol>
 <symbol id="icon-facebook" viewBox="0 0 33 32">
-<path fill="#fea5bb" style="fill: var(--color3, #fea5bb)" d="M16.47 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.836 0-16 7.163-16 16s7.164 16 16 16z"></path>
+<path d="M16.47 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.836 0-16 7.163-16 16s7.164 16 16 16z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M20.916 15.981h-2.61v9.619h-3.955v-9.62h-1.88v-3.38h1.88v-2.187c0-1.565 0.74-4.014 3.99-4.014l2.93 0.012v3.281h-2.126c-0.348 0-0.839 0.176-0.839 0.922v1.99h2.956l-0.346 3.376z"></path>
 </symbol>
 <symbol id="icon-github" viewBox="0 0 32 32">
