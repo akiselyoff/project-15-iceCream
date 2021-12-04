@@ -27,6 +27,9 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 54px;
+    }
 }
 
 .contacts__item {
@@ -45,7 +48,7 @@
     
     &:last-child {
         @media screen and (max-width: 767px) {
-            margin-bottom: 54px;
+            margin-bottom: 0px;
         }
     }
        
