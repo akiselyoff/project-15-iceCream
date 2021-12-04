@@ -29,13 +29,13 @@
         <li class="nav__item"><a href=""> Contact</a></li>
       </ul>
     </nav>
-    <button class="buy-now-btn" type="button btn">
+    <button class="buy-now-btn" type="button header-btn">
       Buy now
       <svg width="4" height="8">
         <use href="#"></use>
       </svg>
     </button>
-    <button type="button" class="burger-btn btn">
+    <button type="button" class="burger-btn header-btn" data-menu-open aria-controls="mobile-menu">
       <svg
         class="burger-btn__icon"
         width="20"
@@ -46,20 +46,27 @@
       </svg>
     </button>
     <!-- MOBILE-MENU START -->
-    <div class="mobile-menu">
-      <button type="button" class="close-btn btn">
-        <svg class="close-btn__icon" width="14" height="14">
+    <div class="mobile-menu" id="mobile-menu" data-menu>
+      <button type="button" class="close-btn header-btn" data-menu-close>
+        <svg
+          class="close-btn__icon"
+          width="14"
+          height="14"
+          aria-label="Переключатель мобильного меню"
+        >
           <use href="./images/svg/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <button class="buy-now-btn mobile-menu__buy-now-btn btn" type="button">
+      <button class="buy-now-btn mobile-menu__buy-now-btn header-btn" type="button">
         Buy now
         <svg class="buy-now-btn__icon" width="5" height="8">
           <use href="./images/svg/icons.svg#icon-bracket-right"></use>
         </svg>
       </button>
       <ul class="mobile-nav">
-        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Home</a></li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link mobile-nav__link--current" href="#">Home</a>
+        </li>
         <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">About us</a></li>
         <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">How it’s made?</a></li>
         <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Our products</a></li>

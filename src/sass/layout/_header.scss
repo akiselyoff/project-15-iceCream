@@ -18,7 +18,7 @@
 // .mobile-menu {
 //   display: none;
 // }
-.btn {
+.header-btn {
   outline: 0;
   border: none;
   padding: 0;
@@ -44,8 +44,12 @@
   padding: 23px 20px 23px 21px;
   background-color: #e17992;
 
-  // transform: translateX(100%);
+  transform: translateX(100%);
   // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--duration) var(--timing-function);
+  &.is-open {
+    transform: translateX(0);
+  }
 }
 .close-btn {
   display: block;
@@ -60,16 +64,35 @@
   background-color: #ffffff;
   border-radius: 22px;
   color: #d41443;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 .buy-now-btn__icon {
   margin-left: 20px;
 }
 
 .mobile-nav__link {
-  display: block;
+  display: flex;
+  align-items: center;
   height: 42px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.29;
   color: #ffffff;
+  &--current {
+    color: #d41443;
+  }
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
+.mobile-nav__item {
+  border-bottom: 1px solid #e18298;
+
+  &:first-child {
+    border-top: 1px solid #e18298;
+  }
 }
