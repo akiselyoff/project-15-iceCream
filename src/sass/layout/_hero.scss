@@ -1,17 +1,16 @@
 .hero {
   background-color: #ffb8ca;
 }
-.container{
-  @media screen and (min-width: 480px){
+.container {
+  @media screen and (min-width: 480px) {
     width: 480px;
-}
+  }
 }
 .hero__title-container {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 410px;
-  margin-top: 137px;
+  height: 497px;
   z-index: 1;
 
   // @media screen and (min-width: 768px) {
@@ -133,8 +132,8 @@
   height: 344px;
   border-radius: 50%;
   position: absolute;
-  top: 80px;
-  right: -60px;
+  top: 15px;
+  right: -56px;
   background-color: #ffa5ba;
 
   // // @media screen and (min-width: 768px) {
@@ -228,7 +227,7 @@
 }
 .ice-cream-pic {
   position: absolute;
-  bottom: 0px;
+  bottom: 100px;
   right: 32px;
 
   // // @media screen and (max-width: 767) {
@@ -241,7 +240,6 @@
 }
 .girl-pic {
   position: absolute;
-  bottom: 0px;
   right: 40px;
   @media screen and (max-width: 767px) {
     display: none;
