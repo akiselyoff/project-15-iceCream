@@ -5,6 +5,7 @@
         "main.scss",
         "_example.scss",
         "base/_fonts.scss"
+
     ],
     "names": [],
     "file": "main.css"
