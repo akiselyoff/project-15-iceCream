@@ -29,8 +29,13 @@
         <li class="nav__item"><a href=""> Contact</a></li>
       </ul>
     </nav>
-
-    <button type="button" class="burger-btn">
+    <button class="buy-now-btn" type="button btn">
+      Buy now
+      <svg width="4" height="8">
+        <use href="#"></use>
+      </svg>
+    </button>
+    <button type="button" class="burger-btn btn">
       <svg
         class="burger-btn__icon"
         width="20"
@@ -42,33 +47,25 @@
     </button>
     <!-- MOBILE-MENU START -->
     <div class="mobile-menu">
-      <div class="mobile-menu__container">
-        <button type="button" class="close-btn">
-          <svg class="close-btn__icon" width="14" height="14">
-            <use href="#"></use>
-          </svg>
-        </button>
-        <button type="button">
-          Buy now
-          <svg width="4" height="8">
-            <use href="#"></use>
-          </svg>
-        </button>
-        <ul class="mobile-nav">
-          <li class="mobile-nav__item"><a href="#">Home</a></li>
-          <li class="mobile-nav__item"><a href="#">About us</a></li>
-          <li class="mobile-nav__item"><a href="#">How it’s made?</a></li>
-          <li class="mobile-nav__item"><a href="#">Our products</a></li>
-          <li class="mobile-nav__item"><a href="#"> Contact</a></li>
-        </ul>
-      </div>
+      <button type="button" class="close-btn btn">
+        <svg class="close-btn__icon" width="14" height="14">
+          <use href="./images/svg/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="buy-now-btn mobile-menu__buy-now-btn btn" type="button">
+        Buy now
+        <svg class="buy-now-btn__icon" width="5" height="8">
+          <use href="./images/svg/icons.svg#icon-bracket-right"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Home</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">About us</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">How it’s made?</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Our products</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"> Contact</a></li>
+      </ul>
     </div>
     <!-- MOBILE-MENU END -->
-    <button class="buy-now" type="button">
-      Buy now
-      <svg width="4" height="8">
-        <use href="#"></use>
-      </svg>
-    </button>
   </div>
 </header>

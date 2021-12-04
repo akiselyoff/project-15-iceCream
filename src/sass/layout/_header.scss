@@ -1,23 +1,75 @@
 .header {
-  background-color: pink;
+  position: relative;
+  background-color: #ffb8ca;
 }
 .header__container {
   display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+}
+.logo {
+  display: block;
 }
 .nav {
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
-.mobile-menu {
-  display: none;
-}
-.burger-btn {
+// .mobile-menu {
+//   display: none;
+// }
+.btn {
+  outline: 0;
+  border: none;
+  padding: 0;
   background-color: transparent;
 }
-.burger-btn__icon {
-  fill: red;
-}
-.buy-now {
+
+.buy-now-btn {
   display: none;
+
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+}
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100%;
+  padding: 23px 20px 23px 21px;
+  background-color: #e17992;
+
+  // transform: translateX(100%);
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 23px;
+}
+.mobile-menu__buy-now-btn {
+  display: block;
+  width: 209px;
+  height: 44px;
+  margin-bottom: 19px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  color: #d41443;
+}
+.buy-now-btn__icon {
+  margin-left: 20px;
+}
+
+.mobile-nav__link {
+  display: block;
+  height: 42px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
 }
