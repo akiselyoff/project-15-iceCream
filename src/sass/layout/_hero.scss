@@ -6,17 +6,18 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 502px;
   margin-top: 137px;
   z-index: 1;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-top: 15px;
   }
 
-  @media screen and (min-width: 1199px) {
-    left: 69px;
-    margin-top: 84px;
-  }
+  //   @media screen and (min-width: 1199px) {
+  //     left: 69px;
+  //     margin-top: 84px;
+  //   }
 }
 
 .hero-container__title {
@@ -24,12 +25,12 @@
   font-family: 'Titan One';
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     width: 162px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 277px;
-  }
+  //   @media screen and (min-width: 1200px) {
+  //     width: 277px;
+  //   }
 }
 .hero-container__portail1 {
   font-family: var(--secondary-font-family);
@@ -92,27 +93,26 @@
   }
 }
 .hero__circle {
- width: 346px;
-		height: 344px;
-		border-radius: 50%;
-		background-color: #FFA5BA;
-		position: absolute;
-		top: 80px;
-		right: -50px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  position: absolute;
+  top: 80px;
+  right: -50px;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 324px;
     height: 322px;
     top: 30px;
-    right: 140px;
   }
 
-  @media screen and (min-width: 1200) {
-    width: 538px;
-    height: 538px;
-    top: 50px;
-    left: 470px;
-  }
+  //   @media screen and (min-width: 1200) {
+  //     width: 538px;
+  //     height: 538px;
+  //     top: 50px;
+  //     left: 470px;
+  //   }
 }
 
 .company-about-1 {
@@ -199,9 +199,9 @@
     right: 24px;
   }
 
-  @media screen and (min-width: 1200) {
-    left: 60px;
-  }
+  //   @media screen and (min-width: 1200) {
+  //     left: 60px;
+  //   }
 }
 .girl-pic {
   position: absolute;
