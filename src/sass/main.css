@@ -144,8 +144,13 @@ button {
 }
 
 .hero {
-  position: relative;
   background-color: #ffb8ca;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .hero__title-container {
@@ -157,15 +162,9 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  height: 502px;
+  height: 410px;
   margin-top: 137px;
   z-index: 1;
-}
-
-@media screen and (max-width: 767px) {
-  .hero__title-container {
-    margin-top: 15px;
-  }
 }
 
 .hero-container__title {
@@ -180,7 +179,7 @@ button {
           flex-direction: column;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .hero-container__title {
     width: 162px;
   }
@@ -188,20 +187,23 @@ button {
 
 .hero-container__portail1 {
   font-family: var(--secondary-font-family);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 38px;
-  line-height: 44px;
+  line-height: 1.15;
+  font-weight: 400;
+  font-size: 26px;
+  text-align: unset;
+  letter-spacing: 0.04em;
+  text-transform: none;
   color: #ffffff;
 }
 
 .hero-container__pjrtail2 {
   font-family: var(--secondary-font-family);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 58px;
-  line-height: 53px;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: unset;
   letter-spacing: 0.04em;
+  text-transform: none;
   color: #d41443;
   margin-bottom: 25px;
 }
@@ -215,10 +217,21 @@ button {
 .hero__title-button1 {
   width: 104px;
   height: 40px;
+  color: #ffffff;
   background: #c7133e;
   border-radius: 20px;
   border: none;
   margin-right: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title-button1 {
+    font-size: 8px;
+    line-height: 10px;
+    width: 62px;
+    height: 24px;
+    margin-right: 10px;
+  }
 }
 
 .hero__title-button2 {
@@ -228,6 +241,15 @@ button {
   background: #ffffff;
   border-radius: 20px;
   border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title-button2 {
+    font-size: 8px;
+    line-height: 10px;
+    width: 83px;
+    height: 24px;
+  }
 }
 
 .hero__avd-card {
@@ -265,18 +287,10 @@ button {
   width: 346px;
   height: 344px;
   border-radius: 50%;
-  background-color: #ffa5ba;
   position: absolute;
   top: 80px;
-  right: -50px;
-}
-
-@media screen and (max-width: 767px) {
-  .hero__circle {
-    width: 324px;
-    height: 322px;
-    top: 30px;
-  }
+  right: -60px;
+  background-color: #ffa5ba;
 }
 
 .company-about-1 {
@@ -380,12 +394,6 @@ button {
   position: absolute;
   bottom: 0px;
   right: 32px;
-}
-
-@media screen and (max-width: 767) {
-  .ice-cream-pic {
-    right: 24px;
-  }
 }
 
 .girl-pic {

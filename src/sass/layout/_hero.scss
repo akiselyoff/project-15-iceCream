@@ -1,18 +1,22 @@
 .hero {
-  position: relative;
   background-color: #ffb8ca;
+}
+.container{
+  @media screen and (min-width: 480px){
+    width: 480px;
+}
 }
 .hero__title-container {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 502px;
+  height: 410px;
   margin-top: 137px;
   z-index: 1;
 
-  @media screen and (max-width: 767px) {
-    margin-top: 15px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   margin-top: 15px;
+  // }
 
   //   @media screen and (min-width: 1199px) {
   //     left: 69px;
@@ -25,7 +29,8 @@
   font-family: 'Titan One';
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 767px) {
+
+  @media screen and (min-width: 767px) {
     width: 162px;
   }
   //   @media screen and (min-width: 1200px) {
@@ -34,21 +39,36 @@
 }
 .hero-container__portail1 {
   font-family: var(--secondary-font-family);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 38px;
-  line-height: 44px;
+  line-height: 1.15;
+  font-weight: 400;
+  font-size: 26px;
+  text-align: unset;
+  letter-spacing: 0.04em;
+  text-transform: none;
   color: #ffffff;
+
+  // @media screen and (min-width: 767px) {
+  //   font-size: 26px;
+  //   line-height: 30px;
+  //   letter-spacing: 0.04em;
+  // }
 }
 .hero-container__pjrtail2 {
   font-family: var(--secondary-font-family);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 58px;
-  line-height: 53px;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: unset;
   letter-spacing: 0.04em;
+  text-transform: none;
   color: #d41443;
   margin-bottom: 25px;
+
+  // @media screen and (min-width: 767px) {
+  //   font-size: 26px;
+  //   line-height: 30px;
+  //   letter-spacing: 0.04em;
+  // }
 }
 .hero__title-buttons {
   display: flex;
@@ -56,10 +76,19 @@
 .hero__title-button1 {
   width: 104px;
   height: 40px;
+  color: #ffffff;
   background: #c7133e;
   border-radius: 20px;
   border: none;
   margin-right: 17px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 8px;
+    line-height: 10px;
+    width: 62px;
+    height: 24px;
+    margin-right: 10px;
+  }
 }
 .hero__title-button2 {
   width: 138px;
@@ -68,6 +97,13 @@
   background: #ffffff;
   border-radius: 20px;
   border: none;
+
+  @media screen and (max-width: 767px) {
+    font-size: 8px;
+    line-height: 10px;
+    width: 83px;
+    height: 24px;
+  }
 }
 .hero__avd-card {
   display: flex;
@@ -96,16 +132,16 @@
   width: 346px;
   height: 344px;
   border-radius: 50%;
-  background-color: #ffa5ba;
   position: absolute;
   top: 80px;
-  right: -50px;
+  right: -60px;
+  background-color: #ffa5ba;
 
-  @media screen and (max-width: 767px) {
-    width: 324px;
-    height: 322px;
-    top: 30px;
-  }
+  // // @media screen and (min-width: 768px) {
+  //   width: 324px;
+  //   height: 322px;
+  //   top: 30px;
+  // }
 
   //   @media screen and (min-width: 1200) {
   //     width: 538px;
@@ -195,9 +231,9 @@
   bottom: 0px;
   right: 32px;
 
-  @media screen and (max-width: 767) {
-    right: 24px;
-  }
+  // // @media screen and (max-width: 767) {
+  //   right: 24px;
+  // }
 
   //   @media screen and (min-width: 1200) {
   //     left: 60px;
