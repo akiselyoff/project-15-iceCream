@@ -1,5 +1,5 @@
 .section__reviews {
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 
 .customer-reviews__wrapper {
@@ -13,8 +13,8 @@
   margin-bottom: 72px;
   background-image: repeating-linear-gradient(
     to bottom,
-    #ffffff,
-    #ffffff,
+    #fafafa,
+    #fafafa,
     30px,
     #d9d9d9 30px,
     #d9d9d9 30.5px
@@ -23,7 +23,7 @@
 
   &::before {
     content: '';
-    background-image: url(../../images/./);
+    background-image: url(#);
   }
 }
 .customer-reviews__sign {
