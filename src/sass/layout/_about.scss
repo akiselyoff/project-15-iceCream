@@ -51,6 +51,12 @@
   text-transform: uppercase;
 
   color: #ffa5ba;
+
+  @media screen and (min-width: 768px) {
+    
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 
 .about__title {
@@ -59,11 +65,19 @@
   font-family: var(--secondary-font-family);
   font-size: 34px;
   line-height: 1.15;
+letter-spacing: 0.04em;
+
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: #d41443;
+
+  @media screen and (min-width: 1200px) {
+    
+    font-size: 48px;
+    line-height: 1.14;
+    
+  }
 }
 
 .about__decor {
@@ -118,11 +132,27 @@
   }
 }
 
+.about__flex {
+  @media screen and (min-width: 768px) {
+  display: flex;
+}
+}
+
 .about__wraper {
+  @media screen and (max-width: 767px) {
   width: 220px;
 
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  width: 340px;
+}
+
+@media screen and (min-width: 1280px) {
+  width: 463px;
+}
 }
 
 .about__list {
