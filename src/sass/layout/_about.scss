@@ -2,6 +2,11 @@
   padding-top: 125px;
   padding-bottom: 39px;
 
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+
   background-color: #fff5f6;
 
   @media screen and (max-width: 767px) {
@@ -25,7 +30,7 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url('/images/milk-pc.png');
-    background-position: center;
+    background-position: left 0 top 342px;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -53,9 +58,18 @@
   color: #ffa5ba;
 
   @media screen and (min-width: 768px) {
-    
+    margin-bottom: 16px;
+
     font-size: 26px;
     line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 15px;
   }
 }
 
@@ -65,32 +79,40 @@
   font-family: var(--secondary-font-family);
   font-size: 34px;
   line-height: 1.15;
-letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 
   text-align: center;
   text-transform: uppercase;
 
   color: #d41443;
 
-  @media screen and (min-width: 1200px) {
-    
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+
     font-size: 48px;
     line-height: 1.14;
-    
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 55px;
+
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
   }
 }
 
 .about__decor {
-  margin-bottom: 46px;
-
   @media screen and (max-width: 767px) {
     background-image: url('/images/cow-mb.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
-    max-width: 100%;
+    width: 280px;
     height: 279px;
+
+    margin-bottom: 46px;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -105,8 +127,10 @@ letter-spacing: 0.04em;
     background-repeat: no-repeat;
     background-size: contain;
 
-    max-width: 100%;
+    width: 340px;
     height: 339px;
+
+    margin-right: 17px;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -121,8 +145,10 @@ letter-spacing: 0.04em;
     background-repeat: no-repeat;
     background-size: contain;
 
-    max-width: 100%;
+    width: 516px;
     height: 516px;
+
+    margin-right: 74px;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -134,49 +160,96 @@ letter-spacing: 0.04em;
 
 .about__flex {
   @media screen and (min-width: 768px) {
-  display: flex;
-}
+    display: flex;
+  }
 }
 
 .about__wraper {
   @media screen and (max-width: 767px) {
-  width: 220px;
+    width: 220px;
 
-  margin-left: auto;
-  margin-right: auto;
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-@media screen and (min-width: 768px) {
-  width: 340px;
-}
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    margin-top: 50px;
+  }
 
-@media screen and (min-width: 1280px) {
-  width: 463px;
-}
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+    margin-top: 51px;
+  }
 }
 
 .about__list {
-  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
 }
 
 .about-list__item:first-child {
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 35px;
+  }
 }
 
 .about-list__item:nth-child(2) {
-  margin-bottom: 12px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 35px;
+  }
 }
 
 .about-list__text {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.57;
-
   color: #907e82;
+  font-weight: 500;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.57;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.78;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
 
 .about-list__text_black {
   color: #000000;
+  @media screen and (max-width: 1279px) {
+    letter-spacing: 0;
+  }
 }
 
 .about__button {
