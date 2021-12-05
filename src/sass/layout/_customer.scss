@@ -23,7 +23,15 @@
 
   &::before {
     content: '';
-    background-image: url(#);
+    display: block;
+    background-image: url('../images/svg/icons.svg#icon-quotes');
+    fill: #e1e1e1;
+    background-color: teal;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 54px;
+    height: 40px;
+    border: 2px solid #212121;
   }
 }
 
@@ -58,6 +66,6 @@
   margin-right: auto;
   margin-bottom: 29px;
 }
-.slick-track {
-  display: flex;
-}
+// .slick-track {
+//   display: flex;
+// }
