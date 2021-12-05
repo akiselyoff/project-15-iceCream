@@ -2,15 +2,19 @@
   background-color: #ffb8ca;
 }
 .container {
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 479px) {
+    overflow: hidden;
   }
 }
 .hero__title-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  height: 497px;
+  margin-top: 137px;
+  height: 315px;
   z-index: 1;
 
   // @media screen and (min-width: 768px) {
@@ -29,9 +33,9 @@
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 767px) {
-    width: 162px;
-  }
+  // @media screen and (min-width: 767px) {
+  //   width: 162px;
+  // }
   //   @media screen and (min-width: 1200px) {
   //     width: 277px;
   //   }
@@ -132,8 +136,8 @@
   height: 344px;
   border-radius: 50%;
   position: absolute;
-  top: 15px;
-  right: -56px;
+  top: 30px;
+  right: -50px;
   background-color: #ffa5ba;
 
   // // @media screen and (min-width: 768px) {
@@ -225,9 +229,9 @@
 .company-about-1__circle {
   color: #fff;
 }
-.ice-cream-pic {
+.ice-cream {
   position: absolute;
-  bottom: 100px;
+  bottom: 0px;
   right: 32px;
 
   // // @media screen and (max-width: 767) {
