@@ -4,9 +4,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(228, 36, 116, 0.6);
-  background-image: linear-gradient(to right, rgba(58, 47, 54, 0.5), rgba(47, 48, 58, 0.2)),
+  background-color: rgba(224, 70, 9, 0.5);
+  background-image: linear-gradient(to bottom, rgba(58, 57, 44, 0.2), rgba(178, 77, 10, 0.7)),
     url(../images/modal3.png);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +15,7 @@
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
-  padding: 20px 15px 94px 15px;
+  padding: 50px 15px 150px 15px;
   overflow-y: scroll;
 }
 
@@ -29,7 +30,7 @@
 
 .modal {
   position: relative;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,9 +60,9 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 1.15;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px #000000;
   color: var(--background-and-text-color);
 }
 
@@ -126,10 +127,10 @@
   transform: translateY(-50%);
 
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
+  text-shadow: 2px 2px 4px #000000;
   color: var(--background-and-text-color);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -162,7 +163,7 @@
   background: transparent;
   border: transparent;
   width: 100%;
-  height: 40px;
+  height: 30px;
   padding-left: 42px;
   font-weight: 400;
   font-size: 18px;
