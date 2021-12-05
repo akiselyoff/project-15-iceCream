@@ -177,6 +177,7 @@ button {
   display: block;
   width: 209px;
   height: 44px;
+  margin: 0 auto;
   background-color: #ffffff;
   border-radius: 22px;
   color: #d41443;
@@ -224,13 +225,19 @@ button {
   background-color: #ffb8ca;
 }
 
-@media screen and (min-width: 480px) {
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 479px) {
   .container {
-    width: 480px;
+    overflow: hidden;
   }
 }
 
 .hero__title-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,9 +245,8 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  height: 410px;
   margin-top: 137px;
+  height: 315px;
   z-index: 1;
 }
 
@@ -254,12 +260,6 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media screen and (min-width: 767px) {
-  .hero-container__title {
-    width: 162px;
-  }
 }
 
 .hero-container__portail1 {
@@ -365,8 +365,8 @@ button {
   height: 344px;
   border-radius: 50%;
   position: absolute;
-  top: 80px;
-  right: -60px;
+  top: 30px;
+  right: -50px;
   background-color: #ffa5ba;
 }
 
@@ -467,7 +467,7 @@ button {
   color: #fff;
 }
 
-.ice-cream-pic {
+.ice-cream {
   position: absolute;
   bottom: 0px;
   right: 32px;
@@ -475,7 +475,6 @@ button {
 
 .girl-pic {
   position: absolute;
-  bottom: 0px;
   right: 40px;
 }
 

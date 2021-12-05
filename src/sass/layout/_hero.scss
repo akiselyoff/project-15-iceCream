@@ -3,10 +3,15 @@
 }
 .container {
   position: relative;
-  z-index: 1;
+  overflow: hidden;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+  }
 
-  @media screen and (max-width: 479px) {
-    overflow: hidden;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 700px;
+    height: 399px;
+    // padding: 37px 34px 0px 34px;
   }
 }
 .hero__title-container {
