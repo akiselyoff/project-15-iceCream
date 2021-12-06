@@ -7,6 +7,8 @@
   margin-bottom: 30px;
 }
 .customer-reviews__discription {
+  position: relative;
+  z-index: 1;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(31 / 12);
@@ -23,15 +25,16 @@
 
   &::before {
     content: '';
-    display: block;
-    background-image: url('../images/кавычки.svg');
-    fill: #e1e1e1;
-    background-color: teal;
+    display: inline-block;
+    position: absolute;
+    background-image: url('../images/svg/icon-quotes.svg');
+    top: -5%;
+    left: 0;
     background-repeat: no-repeat;
     background-position: center;
     width: 54px;
     height: 40px;
-    border: 2px solid #212121;
+    z-index: -1;
   }
 }
 
@@ -65,6 +68,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
+
+  border-radius: 50%;
 }
 // .slick-track {
 //   display: flex;
