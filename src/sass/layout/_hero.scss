@@ -1,17 +1,19 @@
 .hero {
+  overflow: hidden;
   background-color: #ffb8ca;
 }
-.container {
+.hero-container {
+  padding: 6px 20px 0px 20px;
   position: relative;
-  overflow: hidden;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
+  height: 502px;
+
+  @media screen and (min-width: 768px) {
+    height: 399px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 700px;
-    height: 399px;
-    // padding: 37px 34px 0px 34px;
+  @media screen and (min-width: 1200px) {
+    height: 665px;
+    padding: 37px 20px 0px 20px;
   }
 }
 .hero__title-container {
@@ -19,17 +21,16 @@
   display: flex;
   flex-direction: column;
   margin-top: 137px;
-  height: 315px;
   z-index: 1;
 
-  // @media screen and (min-width: 768px) {
-  //   margin-top: 15px;
-  // }
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
 
-  //   @media screen and (min-width: 1199px) {
-  //     left: 69px;
-  //     margin-top: 84px;
-  //   }
+  @media screen and (min-width: 1200px) {
+    left: 69px;
+    margin-top: 84px;
+  }
 }
 
 .hero-container__title {
@@ -38,9 +39,9 @@
   display: flex;
   flex-direction: column;
 
-  // @media screen and (min-width: 767px) {
-  //   width: 162px;
-  // }
+  @media screen and (min-width: 768px) {
+    width: 162px;
+  }
   //   @media screen and (min-width: 1200px) {
   //     width: 277px;
   //   }
@@ -117,13 +118,16 @@
   display: flex;
 }
 .hero-composition {
-  justify-content: center;
-  width: 200px;
-  height: 78px;
-  margin-bottom: 20px;
+  width: 114px;
+  height: 48px;
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    height: 78px;
   }
 
   &__text {
@@ -133,8 +137,16 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 20px;
+    }
   }
+}
+.next-slide {
+  width: 18px;
+  height: 18px;
 }
 .hero__circle {
   width: 346px;
@@ -145,11 +157,12 @@
   right: -50px;
   background-color: #ffa5ba;
 
-  // // @media screen and (min-width: 768px) {
-  //   width: 324px;
-  //   height: 322px;
-  //   top: 30px;
-  // }
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+    top: 30px;
+    right: 105px;
+  }
 
   //   @media screen and (min-width: 1200) {
   //     width: 538px;
@@ -235,17 +248,18 @@
   color: #fff;
 }
 .ice-cream {
-  position: absolute;
-  bottom: 0px;
-  right: 32px;
+  .ice-cream-pic {
+    position: absolute;
+    bottom: 0px;
+    right: 32px;
 
-  // // @media screen and (max-width: 767) {
-  //   right: 24px;
-  // }
+    @media screen and (min-width: 768px) {
+      right: 240px;
+    }
 
-  //   @media screen and (min-width: 1200) {
-  //     left: 60px;
-  //   }
+    // @media screen and (min-width: $desktop) {
+    // 	left: 600px;
+  }
 }
 .girl-pic {
   position: absolute;
