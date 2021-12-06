@@ -21,7 +21,7 @@
     #d9d9d9 30px,
     #d9d9d9 30.5px
   );
-  color: #000000;
+  color: var(--second-text-color);
 
   &::before {
     content: '';
@@ -50,7 +50,7 @@
   line-height: calc(26 / 14);
   text-align: center;
 
-  color: #000000;
+  color: var(--second-text-color);
   &::before {
     display: block;
     position: absolute;
@@ -60,7 +60,7 @@
     transform: translate(-50%, -50%);
     font-size: 26px;
     font-weight: 700;
-    color: #c7133e;
+    color: var(--second-hover-color);
   }
 }
 
@@ -68,9 +68,99 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
-
   border-radius: 50%;
 }
-// .slick-track {
-//   display: flex;
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 18px;
+}
+
+/* Активная точка */
+// .slick-dots li.slick-active {
 // }
+/* Элемент точки */
+// .slider .slick-dots li button {
+
+// }
+
+.slider .slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: #d31342;
+}
+
+.slider .slick-dots li button:first-child {
+  fill: #d31342;
+  background-image: ('../images/svg/icons.svg#icon-house');
+}
+// .slider .slick-dots li.slick-active button:first-child {
+//   background-color: #fafafa;
+//   fill: #d31342;
+//   background-image: ('../images/svg/icons.svg#icon-house');
+// }
+
+//  .slick-slider {
+// }
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized {
+// }
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted {
+// }
+// /* Ограничивающая оболочка */
+// .slick-list {
+//   // overflow: hidden;
+// }
+// /* Лента слайдов */
+// .slick-track {
+// }
+// /* Слайд */
+// .slick-slide {
+// }
+// /* Слайд активный (показывается) */
+// .slick-slide.slick-active {
+// }
+// /* Слайд основной */
+// .slick-slide.slick-current {
+// }
+// /* Слайд по центру */
+// .slick-slide.slick-center {
+// }
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned {
+// }
+// /* Стрелка */
+// .slick-arrow {
+// }
+// /* Стрелка влево */
+// .slick-arrow.slick-prev {
+// }
+// /* Стрелка вправо */
+// .slick-arrow.slick-next {
+// }
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled {
+// }
+// /* Точки (булиты) */
+//
