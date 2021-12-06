@@ -1,42 +1,51 @@
-<header class="header">
+<header class="header" id="header">
   <div class="header__container container">
     <a class="logo" href="/">
       <picture>
         <source
           media="(min-width: 1280px)"
-          srcset="./images/logo-mb.png 1x, ./images/logo-mb.png 2x"
-          sizes="15vw"
+          srcset="./images/logo-mb.webp 1x, ./images/logo-mb@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="./images/logo-mb.png 1x, ./images/logo-mb@2x.png 2x"
         />
         <source
           media="(min-width: 768px)"
-          srcset="./images/logo-mb.png 1x, ./images/logo-mb.png 2x"
-          sizes="25vw"
+          srcset="./images/logo-mb.webp 1x, ./images/logo-mb@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/logo-mb.png 1x, ./images/logo-mb@2x.png 2x"
         />
         <source
           media="(max-width: 767px)"
-          srcset="./images/logo-mb.png 1x, ./images/logo-mb.png 2x"
-          sizes="70vw"
+          srcset="./images/logo-mb.webp 1x, ./images/logo-mb@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/logo-mb.png 1x, ./images/logo-mb@2x.png 2x"
         />
         <img src="#" alt="Логотип" loading="lazy" />
       </picture>
     </a>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item nav__item--current"><a href="">Home</a></li>
-        <li class="nav__item"><a href="">About usz</a></li>
-        <li class="nav__item"><a href="">How it’s made?</a></li>
-        <li class="nav__item"><a href="">Our products</a></li>
-        <li class="nav__item"><a href=""> Contact</a></li>
 
-        
+        <li class="nav__item">
+          <a class="nav__link nav__link--current" href="#header">Home</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#contacts">About us</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">How it’s made?</a></li>
+        <li class="nav__item"><a class="nav__link" href="#products">Our products</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contacts"> Contact</a></li>
+
       </ul>
     </nav>
-    <button class="buy-now-btn" type="button header-btn">
-      Buy now
-      <svg width="4" height="8">
-        <use href="#"></use>
-      </svg>
-    </button>
+
     <button type="button" class="burger-btn header-btn" data-menu-open aria-controls="mobile-menu">
       <svg
         class="burger-btn__icon"
@@ -45,6 +54,12 @@
         aria-label="Переключатель мобильного меню"
       >
         <use href="./images/svg/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button class="buy-now-btn header__buy-now-btn header-btn" type="button" data-modal-open>
+      Buy now
+      <svg class="buy-now-btn__icon" width="5" height="8">
+        <use href="./images/svg/icons.svg#icon-bracket-right"></use>
       </svg>
     </button>
     <!-- MOBILE-MENU START -->
@@ -63,7 +78,11 @@
       </div>
 
       <div class="mobile-menu__container buy-now-btn__container">
-        <button class="buy-now-btn mobile-menu__buy-now-btn header-btn" type="button" data-modal-open>
+        <button
+          class="buy-now-btn mobile-menu__buy-now-btn header-btn"
+          type="button"
+          data-modal-open
+        >
           Buy now
           <svg class="buy-now-btn__icon" width="5" height="8">
             <use href="./images/svg/icons.svg#icon-bracket-right"></use>
@@ -74,27 +93,27 @@
       <ul class="mobile-nav">
         <li class="mobile-nav__item">
           <div class="mobile-menu__container">
-            <a class="mobile-nav__link mobile-nav__link--current" href="#">Home</a>
+            <a class="mobile-nav__link mobile-nav__link--current" href="#header">Home</a>
           </div>
         </li>
         <li class="mobile-nav__item">
           <div class="mobile-menu__container">
-            <a class="mobile-nav__link" href="#">About us</a>
+            <a class="mobile-nav__link" href="#contacts">About us</a>
           </div>
         </li>
         <li class="mobile-nav__item">
           <div class="mobile-menu__container">
-            <a class="mobile-nav__link" href="#">How it’s made?</a>
+            <a class="mobile-nav__link" href="#about">How it’s made?</a>
           </div>
         </li>
         <li class="mobile-nav__item">
           <div class="mobile-menu__container">
-            <a class="mobile-nav__link" href="#">Our products</a>
+            <a class="mobile-nav__link" href="#products">Our products</a>
           </div>
         </li>
         <li class="mobile-nav__item">
           <div class="mobile-menu__container">
-            <a class="mobile-nav__link" href="#"> Contact</a>
+            <a class="mobile-nav__link" href="#contacts"> Contact</a>
           </div>
         </li>
       </ul>

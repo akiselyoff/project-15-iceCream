@@ -52,7 +52,7 @@
             <p class="about-list__text">Aliquam erat volutpat. Aenean accumsan.</p>
           </li>
         </ul>
-        <button class="about__button" type="button">
+        <button class="about__button" type="button" data-about-modal-open>
           Read more
           <svg class="about__icon">
             <use href="./images/svg/icons.svg#icon-bracket-right"></use>
@@ -62,3 +62,40 @@
     </div>
   </div>
 </section>
+<!-- Modal -->
+<div class="backdrop is-hidden" data-about-modal>
+  <div class="about__modal">
+    <button type="button" class="about__modal_close-btn" data-about-modal-close>
+      <svg width="18px" height="18px">
+        <use href="./images/svg/icons.svg#close"></use>
+      </svg>
+    </button>
+    <p class="about__modal_title">how it’s made?</p>
+    <p>
+     We see ourselves as more than just an ice cream brand, we’re a part of
+      your local community. Not only is this why our scoops are as healthy and junk-free as
+      possible, but every single ingredient that goes into our ice cream has been carefully sourced
+      and we go out of our way to support responsible and sustainable practices. We also contribute
+      5% of all our profits to charities that promote health awareness and support everyone we can,
+      from the less fortunate in our local communities to the struggling farmers in Africa without
+      whose hard work we would not be enjoying our cocoa and vanilla. You get to eat ice cream while
+      helping others, surely there’s nothing better in the world than that! Spread happiness and
+      awareness one scoop at a time. So come in and try some exciting flavors today, because this is
+      ice cream. Just as Nature’s intended.
+    </p>
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="./images/milk-ice-cream.webp 1x, ./images/milk-ice-cream@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="./images/milk-ice-cream.png 1x, ./images/milk-ice-cream@2x.png 2x"
+        type="image/jpeg"
+      />
+      <img src="#" alt="multicolored ice cream" />
+    </picture>
+    <button type="submit" class="modal-btn">Buy now</button>
+  </div>
+</div>
