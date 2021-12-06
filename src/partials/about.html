@@ -1,36 +1,64 @@
 <section class="about">
   <div class="about__container container">
     <p class="about__label">tradition and love</p>
-    <h2 class="about__title">how it’s made?</h2>
+    <h2 class="about__title"><a name="how it’s made"></a>how it’s made?</h2>
     <div class="about__flex">
-     <div class="about__decor"></div>
-    <div class="about__wraper">
-      <ul class="about__list">
-        <li class="about-list__item">
-          <p class="about-list__text about-list__text_black">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-          </p>
-        </li>
-        <li class="about-list__item">
-          <p class="about-list__text">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
-            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
-            urna maximus. Cras massa nibh, tincidunt. 
-          </p>
-        </li>
-        <li class="about-list__item">
-          <p class="about-list__text">Aliquam erat volutpat. Aenean accumsan.</p>
-        </li>
-      </ul>
-      <button class="about__button" type="button">
-        Read more
-        <svg class="about__icon">
-          <use href="./images/svg/icons.svg#icon-bracket-right"></use>
-        </svg>
-      </button>
-    </div>  
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="./images/cow-pc.webp 1x, ./images/cow-pc@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="./images/cow-pc.png 1x, ./images/cow-pc@2x.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/cow-tb.webp 1x, ./images/cow-tb@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/cow-tb.png 1x, ./images/cow-tb@2x.png 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/cow-mb.webp 1x, ./images/cow-mb@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/cow-mb.png 1x, ./images/cow-mb@2x.png 2x"
+        />
+        <img src="#" alt="cow and jug of milk" />
+      </picture>
+      <div class="about__wraper">
+        <ul class="about__list">
+          <li class="about-list__item">
+            <p class="about-list__text about-list__text_black">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+              faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            </p>
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__text">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+              orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
+              feugiat urna maximus. Cras massa nibh, tincidunt.
+            </p>
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__text">Aliquam erat volutpat. Aenean accumsan.</p>
+          </li>
+        </ul>
+        <button class="about__button" type="button">
+          Read more
+          <svg class="about__icon">
+            <use href="./images/svg/icons.svg#icon-bracket-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-   
   </div>
 </section>
