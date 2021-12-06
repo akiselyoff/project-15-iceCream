@@ -1,24 +1,29 @@
+<!--разметка header Start-->
+<include src="./partials/header.html"></include>
+<!--разметка header End-->
 <main>
   <section class="hero">
-    <div class="hero-container container">
-      <h1 class="hero-container__title">
-        <span class="hero-container__portail1">ice cream made with</span>
-        <span class="hero-container__pjrtail2"> passion</span>
-      </h1>
-      <ul class="hero__title-buttons">
-        <li>
-          <button class="hero__title-button1" type="button">Products</button>
-        </li>
-        <li>
-          <button class="hero__title-button2" type="button">How it’s made?</button>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="hero__title-container">
+        <h1 class="hero-container__title">
+          <span class="hero-container__portail1">ice cream made with</span>
+          <span class="hero-container__pjrtail2"> passion</span>
+        </h1>
+        <ul class="hero__title-buttons">
+          <li>
+            <button class="hero__title-button1" type="button">Products</button>
+          </li>
+          <li>
+            <button class="hero__title-button2" type="button">How it’s made?</button>
+          </li>
+        </ul>
+      </div>
       <div class="hero__avd-card">
         <div>
           <picture class="milk-pic">
-            <source srcset="#" media="(max-width: 1199px)" />
-            <source srcset="#" media="(min-width: 1200px)" />
-            <img src="/images/hero-milk-pc.png" alt="milk picture" />
+            <source srcset="./images/hero-milk-tb.png" media="(max-width: 1199px)" />
+            <source srcset="./images/hero-milk-pc.png" media="(min-width: 1200px)" />
+            <img src="./images/hero-milk-pc.png" alt="milk picture" />
           </picture>
         </div>
         <div class="hero-composition">
@@ -26,34 +31,36 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
-          <picture>
-            <source srcset="#" media="(max-width: 1199px)" />
-            <source srcset="#" media="(min-width: 1200px)" />
+          <picture class="next-slide">
+            <source srcset="/images/png/arrow-right.png" media="(max-width: 1199px)" />
+            <source srcset="/images/png/arrow-right.png" media="(min-width: 1200px)" />
             <img src="/images/png/arrow-right.png" alt="advertisement arrow" />
           </picture>
         </div>
       </div>
-      <div class="company-about__circle"></div>
-      <div class="company-about">
-        <p class="company-about_num">16</p>
-        <p class="company-about__text">cafes</p>
+      <div class="company-about-1">
+        <div class="company-about-1__circle"></div>
+        <p class="company-about-1__num">16</p>
+        <p class="company-about-1__text">cafes</p>
       </div>
-      <div class="company-about__circle"></div>
-      <div class="company-about">
-        <p class="company-about_num">23</p>
-        <p class="company-about__text">food trucks</p>
+      <div class="company-about-2">
+        <div class="company-about-2__circle"></div>
+        <p class="company-about-2__num">23</p>
+        <p class="company-about-2__text">food trucks</p>
       </div>
       <div class="hero__circle"></div>
-      <picture class="ice-cream-pic">
-        <source srcset="#" media="(max-width: 767px)" />
-        <source srcset="#" media="(max-width: 1199px)" />
-        <source srcset="#" media="(min-width: 1200px)" />
-        <img src="#" alt="delicious ice-cream picture" />
-      </picture>
+      <div class="ice-cream">
+        <picture class="ice-cream-pic">
+          <source srcset="./images/icecream-mb.png" media="(max-width: 767px)" />
+          <source srcset="./images/icecream-tb.png" media="(max-width: 1199px)" />
+          <source srcset="./images/icecream-pc.png" media="(min-width: 1200px)" />
+          <img src="./images/icecream-pc.png" alt="delicious ice-cream picture" />
+        </picture>
+      </div>
       <picture class="girl-pic">
-        <source srcset="#" media="(max-width: 1199px)" />
-        <source srcset="#" media="(min-width: 1200px)" />
-        <img src="#" alt="a very happy girl eating delicious ice-cream" />
+        <source srcset="./images/hero-girl-tb.png" media="(max-width: 1199px)" />
+        <source srcset="./images/hero-girl-pc.png" media="(min-width: 1200px)" />
+        <img src="./images/hero-girl-pc.png" alt="a very happy girl eating delicious ice-cream" />
       </picture>
     </div>
   </section>
