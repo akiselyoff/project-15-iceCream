@@ -56,11 +56,14 @@
   text-transform: none;
   color: #ffffff;
 
-  // @media screen and (min-width: 767px) {
-  //   font-size: 26px;
-  //   line-height: 30px;
-  //   letter-spacing: 0.04em;
-  // }
+  @media screen and (min-width: 768px) {
+    line-height: 1.14;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: unset;
+    letter-spacing: 0.04em;
+    text-transform: none;
+  }
 }
 .hero-container__pjrtail2 {
   font-family: var(--secondary-font-family);
@@ -74,9 +77,12 @@
   margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
-    font-size: 26px;
-    line-height: 30px;
+    line-height: 0.9;
+    font-weight: 400;
+    font-size: 34px;
+    text-align: unset;
     letter-spacing: 0.04em;
+    text-transform: none;
   }
 }
 .hero__title-buttons {
@@ -149,14 +155,16 @@
   &__text {
     font-family: var(--primary-font-family);
     color: #ffffff;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 8px;
+    text-align: unset;
+    letter-spacing: 0.04em;
+    text-transform: none;
     margin-bottom: 7px;
 
     @media screen and (min-width: 768px) {
-      margin-top: 20px;
+      margin-top: 66px;
     }
   }
 }
@@ -204,22 +212,24 @@
   &__num {
     font-family: var(--secondary-font-family);
     color: #d41443;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 46px;
-    line-height: 53px;
-    text-align: right;
-    position: relative;
+    z-index: 1;
+    line-height: 1.14;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: unset;
+    letter-spacing: 0.04em;
+    text-transform: none;
   }
 
   &__text {
     font-family: var(--primary-font-family);
     color: #ffffff;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: right;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 8px;
+    text-align: unset;
+    letter-spacing: 0.04em;
+    text-transform: none;
   }
 }
 .company-about-2 {
@@ -237,22 +247,24 @@
   &__num {
     font-family: var(--secondary-font-family);
     color: #d41443;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 46px;
-    line-height: 53px;
-    text-align: right;
-    position: relative;
+    z-index: 1;
+    line-height: 1.14;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: unset;
+    letter-spacing: 0.04em;
+    text-transform: none;
   }
 
   &__text {
     font-family: var(--primary-font-family);
     color: #ffffff;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: right;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 8px;
+    text-align: unset;
+    letter-spacing: 0.04em;
+    text-transform: none;
   }
 }
 .company-about-1__circle {
@@ -264,12 +276,12 @@
   border-radius: 50%;
   background-color: #ffffff;
 
-  @media screen and (min-width: 768px) {
-    top: -5px;
-    right: -15px;
-    width: 30px;
-    height: 30px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   top: -5px;
+  //   right: -15px;
+  //   width: 30px;
+  //   height: 30px;
+  // }
 }
 
 .company-about-2__circle {
@@ -281,12 +293,12 @@
   border-radius: 50%;
   background-color: #ffffff;
 
-  @media screen and (min-width: 768px) {
-    top: -5px;
-    right: -15px;
-    width: 30px;
-    height: 30px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   top: -5px;
+  //   right: -15px;
+  //   width: 30px;
+  //   height: 30px;
+  // }
 }
 .milk-pic {
   margin-top: 19px;
@@ -297,7 +309,7 @@
 .company-about-1__circle {
   color: #fff;
 }
-.ice-cream {
+.ice-cream-pic {
   position: absolute;
   bottom: 0px;
   right: 32px;
@@ -308,6 +320,25 @@
 
   // @media screen and (min-width: $desktop) {
   // 	left: 600px;
+}
+.animate__slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 1s;
+}
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateZ(0);
+  }
 }
 
 .girl-pic {
