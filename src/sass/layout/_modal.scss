@@ -4,18 +4,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(224, 70, 9, 0.5);
-  background-image: linear-gradient(to bottom, rgba(58, 57, 44, 0.2), rgba(178, 77, 10, 0.7)),
-    url(../images/modal3.png);
+  background-color: /*#ee7777*/ rgba(250, 233, 233, 0.9);
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 1;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
-  padding: 50px 15px 150px 15px;
+  padding: 50px 15px 50px 15px;
   overflow-y: scroll;
 }
 
@@ -30,7 +23,7 @@
 
 .modal {
   position: relative;
-  top: 65%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,7 +33,15 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  border-radius: 4px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(243, 62, 49, 0.8),
+    rgba(255, 123, 0, 0.5)
+  ); /*, url(../images/modal3.png)
+  background-size: cover;
+  background-position: center;*/
+  opacity: 1;
+  border-radius: 60px;
 
   @media screen and (min-width: 320px) {
     min-width: 290px;
@@ -48,6 +49,10 @@
 
   @media screen and (min-width: 480px) {
     width: 480px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 55%;
   }
 }
 
@@ -58,17 +63,21 @@
 
   font-family: 'Titan One';
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.15em;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
   color: var(--background-and-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 40px;
   display: flex;
   justify-content: center;
@@ -109,8 +118,29 @@
 .modal-form-field {
   position: relative;
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   color: var(--background-and-text-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
+}
+
+.modal-form-ice {
+  display: flex;
+  flex-basis: auto;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.modal-form-pic {
+  transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .modal-form-field.checkbox {
@@ -134,6 +164,10 @@
   color: var(--background-and-text-color);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .modal-label-license {
@@ -142,6 +176,7 @@
   line-height: 1.17;
   width: 220px;
   color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -192,6 +227,11 @@
   fill: currentColor;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .modal-form-field:hover .modal-icon,
@@ -269,22 +309,5 @@
   &:focus {
     background-color: #d41443;
     color: #ffffff;
-  }
-}
-
-.modal-form-ice {
-  display: flex;
-  flex-basis: auto;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 40px;
-}
-
-.modal-form-pic {
-  transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
-  &:hover {
-    transform: scale(1.2);
   }
 }
