@@ -28,7 +28,7 @@
     content: '';
     display: inline-block;
     position: absolute;
-    background-image: url('../images/svg/icons.svg#icon-quotes.svg');
+    background-image: url('../images/svg/icon-quotes1.svg');
     fill: #e1e1e1;
     top: -5%;
     left: 0;
@@ -37,7 +37,6 @@
     width: 54px;
     height: 40px;
     z-index: -1;
-    border: 3px solid var(--second-text-color);
   }
 }
 
@@ -114,9 +113,8 @@
   background-color: #d31342;
 }
 
-.slider .slick-dots li button:first-child {
-  fill: #d31342;
-  background-image: ('../images/svg/icons.svg#icon-house');
+.slider .slick-dots li.slick-active button:first-child {
+  background: ('../images/svg/home-1.svg') 0 0 100% no-repeat;
 }
 // .slider .slick-dots li.slick-active button:first-child {
 //   background-color: #fafafa;
