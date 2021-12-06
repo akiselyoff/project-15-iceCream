@@ -27,7 +27,8 @@
     content: '';
     display: inline-block;
     position: absolute;
-    background-image: url('../images/svg/icon-quotes.svg');
+    background-image: url('../images/svg/icons.svg#icon-quotes.svg');
+    fill: #e1e1e1;
     top: -5%;
     left: 0;
     background-repeat: no-repeat;
@@ -35,6 +36,7 @@
     width: 54px;
     height: 40px;
     z-index: -1;
+    border: 3px solid var(--second-text-color);
   }
 }
 
