@@ -91,6 +91,23 @@
   margin: 0px 18px;
 }
 
+.slider {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url('../images/svg/home-1.svg');
+    bottom: 0;
+    left: 31.5%;
+    z-index: 1;
+    cursor: pointer;
+  }
+}
+
 /* Активная точка */
 // .slick-dots li.slick-active {
 // }
@@ -112,10 +129,29 @@
 .slider .slick-dots li.slick-active button {
   background-color: #d31342;
 }
+// .slider ul li:first-child {
+//   background-color: #fafafa;
+// }
+// .slick-dots li:nth-of-type(1) {
+//   ba
+// }
+// background: url('../images/svg/home-1.svg');
+// .slider ul li:nth-of-type(1) button:first-child {
+//   background-color: #fafafa;
+// }
 
-.slider .slick-dots li.slick-active button:first-child {
-  background: ('../images/svg/home-1.svg') 0 0 100% no-repeat;
-}
+// .slider ul li:first-child {
+//   opacity: 0;
+
+//   &:first-child {
+//     background-image: url('../images/svg/home-1.svg');
+//     opacity: 1;
+//   }
+// }
+
+// .slider .slick-dots li.slick-active button:first-child {
+//   background: ('../images/svg/home-1.svg') 0 0 100% no-repeat;
+// }
 // .slider .slick-dots li.slick-active button:first-child {
 //   background-color: #fafafa;
 //   fill: #d31342;
