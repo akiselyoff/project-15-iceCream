@@ -2,10 +2,6 @@
   overflow: hidden;
   background-color: #ffb8ca;
 }
-// .container {
-//   width: 1280px;
-//   margin: 0 auto;
-// }
 .hero-container {
   position: relative;
   height: 502px;
@@ -105,9 +101,9 @@
 }
 .hero__title-buttons {
   display: flex;
-  // @media screen and (min-width: $desktop) {
-  // 		margin-top: 25px;
-  // 	}
+  @media screen and (min-width: 1200px) {
+    margin-top: 25px;
+  }
 }
 .hero__title-button1 {
   position: relative;
@@ -249,7 +245,7 @@
     right: 137px;
   }
 
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     width: 538px;
     height: 538px;
     top: 50px;
@@ -337,12 +333,12 @@
   border-radius: 50%;
   background-color: #ffffff;
 
-  // @media screen and (min-width: 1200px) {
-  //   top: -5px;
-  //   right: -15px;
-  //   width: 30px;
-  //   height: 30px;
-  // }
+  @media screen and (min-width: 1200px) {
+    top: -5px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .company-about-2__circle {
@@ -354,12 +350,12 @@
   border-radius: 50%;
   background-color: #ffffff;
 
-  // @media screen and (min-width: 1200px) {
-  //   top: -5px;
-  //   right: -15px;
-  //   width: 30px;
-  //   height: 30px;
-  // }
+  @media screen and (min-width: 1200px) {
+    top: -5px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+  }
 }
 .milk-pic {
   margin-top: 19px;
@@ -379,8 +375,8 @@
     right: 247px;
   }
 
-  // @media screen and (min-width: $desktop) {
-  // 	left: 600px;
+  @media screen and (min-width: 1200px) {
+  	left: 600px;
 }
 .animate__slideInUp {
   animation-name: slideInUp;
@@ -428,4 +424,5 @@
   100% {
     transform: translateZ(0);
   }
+}
 }
