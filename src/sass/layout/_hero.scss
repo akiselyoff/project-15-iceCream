@@ -376,54 +376,54 @@
   }
 
   @media screen and (min-width: 1200px) {
-  	left: 600px;
-}
-.animate__slideInUp {
-  animation-name: slideInUp;
-  animation-duration: 1s;
-}
-.animate__animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-@keyframes slideInUp {
-  0% {
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
+    left: 600px;
+  }
+  .animate__slideInUp {
+    animation-name: slideInUp;
+    animation-duration: 1s;
+  }
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
   }
 
-  100% {
-    transform: translateZ(0);
-  }
-}
+  @keyframes slideInUp {
+    0% {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
 
-.girl-pic {
-  position: absolute;
-  right: 34px;
-  bottom: 0;
-  
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-.animate__slideInRight {
-  animation-name: slideInRight;
-  animation-duration: 1s;
-}
-.animate__animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
+    100% {
+      transform: translateZ(0);
+    }
   }
 
-  100% {
-    transform: translateZ(0);
+  .girl-pic {
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
-}
+  .animate__slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+  }
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+
+    100% {
+      transform: translateZ(0);
+    }
+  }
 }
