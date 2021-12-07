@@ -4,7 +4,7 @@
 
 .customer-reviews__wrapper {
   background-color: #fafafa;
-  padding: 43px 66px 26px 57px;
+  padding: 43px 66px 20px 57px;
   margin-bottom: 30px;
 }
 .customer-reviews__discription {
@@ -22,6 +22,8 @@
     #d9d9d9 30px,
     #d9d9d9 30.5px
   );
+  background-size: 100% 30.5px;
+
   color: var(--second-text-color);
 
   &::before {
@@ -51,18 +53,32 @@
   font-size: 14px;
   line-height: calc(26 / 14);
   text-align: center;
-
   color: var(--second-text-color);
-  &::before {
-    display: block;
+}
+
+.marks,
+.marks:before,
+.marks:after {
+  width: 4px;
+  height: 4px;
+  background: var(--second-hover-color);
+  border-radius: 50%;
+}
+.marks {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+
+  &:before {
+    content: '';
     position: absolute;
-    content: '.  .  .';
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--second-hover-color);
+    left: -10px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -10px;
   }
 }
 
@@ -91,31 +107,6 @@
   margin: 0px 18px;
 }
 
-.slider {
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 12px;
-    height: 12px;
-    background: url('../images/svg/home-1.svg');
-    bottom: 0;
-    left: 31.5%;
-    z-index: 1;
-    cursor: pointer;
-  }
-}
-
-/* Активная точка */
-// .slick-dots li.slick-active {
-// }
-/* Элемент точки */
-// .slider .slick-dots li button {
-
-// }
-
 .slider .slick-dots li button {
   font-size: 0;
   width: 12px;
@@ -126,79 +117,15 @@
   cursor: pointer;
 }
 
+.slider .slick-dots li.slick-active:first-child button {
+  background: url('../images/svg/home-1.svg');
+  width: 13px;
+  height: 12px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .slider .slick-dots li.slick-active button {
   background-color: #d31342;
 }
-// .slider ul li:first-child {
-//   background-color: #fafafa;
-// }
-// .slick-dots li:nth-of-type(1) {
-//   ba
-// }
-// background: url('../images/svg/home-1.svg');
-// .slider ul li:nth-of-type(1) button:first-child {
-//   background-color: #fafafa;
-// }
-
-// .slider ul li:first-child {
-//   opacity: 0;
-
-//   &:first-child {
-//     background-image: url('../images/svg/home-1.svg');
-//     opacity: 1;
-//   }
-// }
-
-// .slider .slick-dots li.slick-active button:first-child {
-//   background: ('../images/svg/home-1.svg') 0 0 100% no-repeat;
-// }
-// .slider .slick-dots li.slick-active button:first-child {
-//   background-color: #fafafa;
-//   fill: #d31342;
-//   background-image: ('../images/svg/icons.svg#icon-house');
-// }
-
-//  .slick-slider {
-// }
-// /* Слайдер запущен */
-// .slick-slider.slick-initialized {
-
-// /* Слайдер с точками */
-// .slick-slider.slick-dotted {
-// }
-// /* Ограничивающая оболочка */
-// .slick-list {
-//   // overflow: hidden;
-// }
-// /* Лента слайдов */
-// .slick-track {
-// }
-// /* Слайд */
-// .slick-slide {
-// }
-// /* Слайд активный (показывается) */
-// .slick-slide.slick-active {
-// }
-// /* Слайд основной */
-// .slick-slide.slick-current {
-// }
-// /* Слайд по центру */
-// .slick-slide.slick-center {
-// }
-// /* Клонированный слайд */
-// .slick-slide.slick-cloned {
-// }
-// /* Стрелка */
-// .slick-arrow {
-// }
-// /* Стрелка влево */
-// .slick-arrow.slick-prev {
-// }
-// /* Стрелка вправо */
-// .slick-arrow.slick-next {
-// }
-// /* Стрелка не активная */
-// .slick-arrow.slick-disabled {
-// }
-// /* Точки (булиты) */
-//
