@@ -1,5 +1,5 @@
 :root {
-  /*colors*/
+  
   --second-background-and-text-color: #ffffff;
   --accent-and-text-color: #d41443;
   --background-and-text-color: #ffb8ca;
@@ -8,13 +8,13 @@
   --third-text-color: #907e82;
   --first-hover-color: #ecebeb;
   --second-hover-color: #c7133e;
+  --section-background-color: #fff5f6;
 
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --duration: 250ms;
-  --primary-font-family: DM Sans, sans-serif;
 
-  // --title-and-button-gap: 15px;
-  // --card-set-gap: 30px;
+  --primary-font-family: DM Sans, sans-serif;
+  --secondary-font-family: Titan One, cursive;
 
   // --mobile: 480px;
   // --tablet: 768px;
