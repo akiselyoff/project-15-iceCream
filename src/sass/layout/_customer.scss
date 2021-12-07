@@ -12,7 +12,7 @@
     padding-left: 74px;
     padding-right: 74px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-left: 178px;
     padding-right: 176px;
   }
@@ -24,7 +24,7 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 119px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 132px;
   }
 }
@@ -39,7 +39,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 19px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 15px;
   }
 }
@@ -51,11 +51,11 @@
   margin-left: auto;
 
   @media screen and (min-width: 768px) {
-    padding: 30px 36px 28px 40px;
+    padding: 47px 80px 34px 80px;
     margin-bottom: 24px;
   }
-  @media screen and (min-width: 1200px) {
-    padding: 32px 54px 32px 50px;
+  @media screen and (min-width: 1280px) {
+    padding: 47px 89px 39px 87px;
     margin-bottom: 15px;
   }
 }
@@ -97,21 +97,26 @@
     position: absolute;
     background-image: url('../images/svg/icon-quotes1.svg');
     fill: #e1e1e1;
-    top: -5%;
-    left: 0;
+    top: -15px;
+    left: -3px;
     background-repeat: no-repeat;
     background-position: center;
     width: 54px;
     height: 40px;
     z-index: -1;
-    @media screen and (min-width: 768px) {
-      top: -20%;
-      left: -8%;
+    @media screen and (min-width: 480px) {
+      top: -15px;
+      left: -10px;
     }
 
-    @media screen and (min-width: 1200px) {
-      top: -20%;
-      left: -5%;
+    @media screen and (min-width: 768px) {
+      top: -15px;
+      left: -43px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: -15px;
+      left: -37px;
     }
   }
   @media screen and (min-width: 768px) {
@@ -119,7 +124,7 @@
     line-height: calc(30 / 14);
     letter-spacing: 0.04em;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: calc(30 / 16);
   }
@@ -135,7 +140,7 @@
     padding: 18px 54px 0px 54px;
     margin-bottom: 35px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding: 14px 264px 0px 264px;
   }
 }
