@@ -1,6 +1,14 @@
 .gallery {
   background-image: linear-gradient(to bottom, #fff5f6 27%, #ffffff 27%);
   padding-bottom: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 121px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 121px;
+  }
 }
 
 .gallery-box {
@@ -10,8 +18,36 @@
   justify-content: center;
 }
 
+.gallery-box.container {
+  @media screen and (min-width: 768px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
 .gallery-item {
   position: relative;
+}
+
+.gallery-item-top {
+  padding: 1px;
+
+  @media screen and (min-width: 480px) {
+    padding: 2px;
+  }
+}
+
+.gallery-item-bottom {
+  padding: 1px;
+
+  @media screen and (min-width: 480px) {
+    padding: 2px;
+  }
 }
 
 .gallery-item:nth-child(5) {
@@ -27,7 +63,7 @@
   top: 0;
   left: 0;
   border-radius: 10px;
-  margin: 4px;
+
   opacity: 0;
 
   transition: border-radius 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
@@ -46,7 +82,7 @@
   bottom: 0;
   left: 0;
   border-radius: 10px;
-  margin: 4px;
+
   opacity: 0;
 
   transition: border-radius 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
@@ -62,7 +98,7 @@
 
 .gallery-picture {
   border-radius: 10px;
-  margin: 4px;
+
   transition: border-radius 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
     transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
     opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -100,7 +136,6 @@
 .gallery-picture-girl {
   width: 50%;
   border-radius: 10px;
-  margin: 4px;
 
   transition: border-radius 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
     transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
@@ -128,7 +163,7 @@
   left: 0;
   width: 50%;
   border-radius: 10px;
-  margin: 4px;
+
   opacity: 0;
   transition: border-radius 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
     transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
