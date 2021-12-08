@@ -7,7 +7,7 @@
     padding-bottom: 66px;
   }
 
-  background-color: #fff5f6;
+  background-color: var(--section-background-color);
 
   @media screen and (max-width: 767px) {
     background-image: url('/images/milk-mb.png');
@@ -71,7 +71,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: var(--first-text-color);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
@@ -100,7 +100,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: var(--accent-and-text-color);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
@@ -187,7 +187,7 @@
 }
 
 .about-list__text {
-  color: #907e82;
+  color: var(--third-text-color);
   font-weight: 500;
   @media screen and (max-width: 767px) {
     font-size: 12px;
@@ -207,7 +207,7 @@
 }
 
 .about-list__text_black {
-  color: #000000;
+  color: var(--second-text-color);
   @media screen and (max-width: 1279px) {
     letter-spacing: 0;
   }
@@ -224,8 +224,8 @@
   font-size: 14px;
   line-height: 1.28px;
 
-  color: #d41443;
-  background-color: #ffffff;
+  color: var(--accent-and-text-color);
+  background-color: var(--second-background-and-text-color);
   border: none;
   border-radius: 22px;
 
@@ -235,7 +235,7 @@
 
   &:focus,
   &:hover {
-    background-color: #ecebeb;
+    background-color: var(--first-hover-color);
   }
 }
 
@@ -243,4 +243,153 @@
   width: 4.43px;
   height: 8px;
   margin-left: 13.62px;
+}
+
+
+
+.about__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;  
+
+  background-color: rgba(250, 233, 233, 0.8);
+  transition-property: visibility, opacity;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.about__backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  & .modal {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0;
+  }
+}
+
+.about__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin-left: auto;
+    margin-right: auto;
+  
+  padding: 20px;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 10px;
+  
+
+  background-color: var(--first-text-color);
+  transition-property: transform, opacity;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+background-image: url('/images/milk-ice-cream.png');
+    background-position: right 0 bottom 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+        @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/images/milk-ice-cream@2x.png');
+    }
+
+  @media screen and (min-width: 320px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+  }
+}
+.about__modal_close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  fill: var(--accent-and-text-color);
+  background-color: var(--section-background-color);
+  border: none;
+}
+
+.about__modal_title {
+  margin-bottom: 20px;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-and-text-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 38px;
+  }
+}
+
+.about__modal_text {
+  margin-bottom: 20px;
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  line-height: 1.17;
+
+  color: var(--second-text-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.about__modal_button {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 44px;
+  min-width: 176px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28px;
+
+  color: var(--accent-and-text-color);
+  background-color: var(--section-background-color);
+  border: none;
+  border-radius: 22px;
+
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:focus,
+  &:hover {
+    background-color: var(--second-background-and-text-color);
+  }
 }
