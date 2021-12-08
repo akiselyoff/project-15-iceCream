@@ -12,8 +12,14 @@
                 <div class="contacts__text"> Fusce ut velit laoreet, tempus arcu molestie vulputate</div>
 
                 <ul class="contacts__info-working">
-                    <li class="contacts__weekdays"> <p class="contacts__day-working">Monday - Friday</p> <p class="contacts__time-working">06:00 AM - 10:00 PM</p></li>
-                    <li class="contacts__weekends"> <p class="contacts__day-working">Saturday - Sunday</p> <p class="contacts__time-working">08:00 AM - 16:00 PM</p></li>
+                    <li class="contacts__weekdays">
+                        <p class="contacts__day-working">Monday - Friday</p>
+                        <p class="contacts__time-working">06:00 AM - 10:00 PM</p>
+                    </li>
+                    <li class="contacts__weekends">
+                        <p class="contacts__day-working">Saturday - Sunday</p>
+                        <p class="contacts__time-working">08:00 AM - 16:00 PM</p>
+                    </li>
                 </ul>
 
                 <ul class="contacts__conection">
@@ -27,8 +33,14 @@
                 <div class="contacts__text"> Fusce ut velit laoreet, tempus arcu molestie vulputate</div>
 
                 <ul class="contacts__info-working">
-                    <li class="contacts__weekdays"> <p class="contacts__day-working">Monday - Friday</p> <p class="contacts__time-working">06:00 AM - 10:00 PM</p></li>
-                    <li class="contacts__weekends"> <p class="contacts__day-working">Saturday - Sunday</p> <p class="contacts__time-working">08:00 AM - 16:00 PM</p></li>
+                    <li class="contacts__weekdays">
+                        <p class="contacts__day-working">Monday - Friday</p>
+                        <p class="contacts__time-working">06:00 AM - 10:00 PM</p>
+                    </li>
+                    <li class="contacts__weekends">
+                        <p class="contacts__day-working">Saturday - Sunday</p>
+                        <p class="contacts__time-working">08:00 AM - 16:00 PM</p>
+                    </li>
                 </ul>
 
                 <ul class="contacts__conection">
@@ -43,25 +55,94 @@
                 <div class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</div>
 
                 <ul class="contacts__info-working">
-                    <li class="contacts__weekdays"> <p class="contacts__day-working">Monday - Friday</p> <p class="contacts__time-working">06:00 AM - 10:00 PM</p></li>
-                    <li class="contacts__weekends"> <p class="contacts__day-working">Saturday - Sunday</p> <p class="contacts__time-working">08:00 AM - 16:00 PM</p></li>
+                    <li class="contacts__weekdays">
+                        <p class="contacts__day-working">Monday - Friday</p>
+                        <p class="contacts__time-working">06:00 AM - 10:00 PM</p>
+                    </li>
+                    <li class="contacts__weekends">
+                        <p class="contacts__day-working">Saturday - Sunday</p>
+                        <p class="contacts__time-working">08:00 AM - 16:00 PM</p>
+                    </li>
                 </ul>
 
                 <ul class="contacts__conection">
-                    <li ><a class="contacts__mail link" href="tel:+610383766284 ">+61(0) 383 766 284 </a></li>
-                    <li ><a class="contacts__tel link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+                    <li><a class="contacts__mail link" href="tel:+610383766284 ">+61(0) 383 766 284 </a></li>
+                    <li><a class="contacts__tel link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
                 </ul>
             </li>
         </ul>
         <ul class="contacts__btn">
-            <li><button type="button" class="contacts__location btn">Our Locations <svg class="contacts__location-icon">
-                <use href="./images/svg/icons.svg#icon-bracket-right">
-                </use>
-            </svg> </button></li>
-            <li><button type="button" class="contacts__franchise btn">Franchise <svg class="contacts__franchise-icon">
-                <use href="./images/svg/icons.svg#icon-bracket-right">
-                </use> </svg> </button></li>
+            <li>
+                <button type="submit" onClick="location.href='https://goo.gl/maps/4tDDYaYBAP9Fq9vV7'"
+                    class="contacts__location btn">Our Locations <svg class="contacts__location-icon">
+                        <use href="./images/svg/icons.svg#icon-bracket-right">
+                        </use>
+                    </svg> </button>
+            </li>
+            <li><button type="button" class="contacts__franchise btn" contacts-data-modal-open>Franchise <svg
+                        class="contacts__franchise-icon">
+                        <use href="./images/svg/icons.svg#icon-bracket-right">
+                        </use>
+                    </svg> </button></li>
         </ul>
 
     </div>
 </section>
+
+ <div class="contacts-backdrop is-hidden" contacts-data-modal>
+            <div class="franchise-modal">
+                    <button type="button" class="francise-modal__btn-close btn" contacts-data-modal-close>
+                            <svg class="franchise-modal__close-icon">
+                                    <use href="./images/svg/icons.svg#close">
+                                        </use>
+                                </svg>
+                        </button>
+                    <form class="franchise-modal__form" autocomplete="off">
+                            <p class="franchise-modal__head">Join our team </p>
+
+                            <label class="franchise-modal__field">Name
+                                    <span class="franchise-modal__wrapper">
+                                            <input type="text" class="franchise-modal__input" name="user-name"
+                        minlength="2"                            
+                        title="The name must contain Cyrillic and Latin characters"  pattern="[a-zA-Zа-яёА-ЯЁ]+"    
+                                                required>
+                                            <svg class="franchise-modal__icon" width="18px" height="18px">
+                                                    <use href="./images/svg/icons.svg#person">
+                                                        </use>
+                                                </svg>
+                                        </span>
+                                </label>
+
+                            <label class="franchise-modal__field">Phone 
+                                    <span class="franchise-modal__wrapper">
+                                            <input type="tel" class="franchise-modal__input" name="user-tel"
+                        minlength="10" title="099-xxx-xx-xx"                            
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                                            <svg class="franchise-modal__icon" width="13px" height="13px">
+                                                    <use href="./images/svg/icons.svg#handset">
+                                                        </use>
+                                                </svg>
+                                        </span>
+                                </label>
+
+                            <label class="franchise-modal__field">Email 
+                                    <span class="franchise-modal__wrapper">
+                                            <input type="email" class="franchise-modal__input" name="user-email"
+                        maxlength="30"                             title="format: xxx@xxx.xxx"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                            <svg class="franchise-modal__icon" width="15px" height="12px">
+                                                    <use href="./images/svg/icons.svg#email"> </use>
+                                                </svg>
+                                        </span>
+                                </label>
+
+                            <label class="franchise-modal__message-field">Message 
+                                    <textarea class="franchise-modal__message" name="user-message"
+                    placeholder="enter text"></textarea>
+                                </label>
+
+                            <button type="submit" class="franchise-modal__btn btn">Send</button>
+
+                        </form>
+                </div>
+        </div>
