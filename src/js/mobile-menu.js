@@ -26,3 +26,8 @@
   });
 })();
 
+$(document).on("click",".mobile-nav__item", function(){
+
+  $(".mobile-nav__item").closest(".mobile-menu").removeClass("is-open");
+  bodyScrollLock.enableBodyScroll(document.body);
+});
