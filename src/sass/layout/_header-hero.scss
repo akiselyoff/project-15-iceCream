@@ -3,6 +3,14 @@
   position: relative;
   background-color: #ffb8ca;
 }
+section {
+  padding-bottom: 127px;
+}
+.container {
+  @media screen and (min-width: 1280px) {
+    width: 1080px;
+  }
+}
 .header-hero__container {
   position: relative;
   height: 502px;
@@ -30,6 +38,7 @@
 .nav__list {
   display: flex;
   margin: 0 110px;
+  margin-top: 15px;
 
   @media screen and (max-width: 1279px) {
     display: none;
@@ -201,7 +210,7 @@
   font-size: 26px;
   text-align: unset;
   letter-spacing: 0.04em;
-  text-transform: none;
+  text-transform: uppercase;
   color: #ffffff;
 
   @media screen and (min-width: 768px) {
@@ -210,7 +219,7 @@
     font-size: 22px;
     text-align: unset;
     letter-spacing: 0.04em;
-    text-transform: none;
+    text-transform: uppercase;
   }
   @media screen and (min-width: 1280px) {
     line-height: 1.16;
@@ -218,7 +227,7 @@
     font-size: 38px;
     text-align: unset;
     letter-spacing: 0.04em;
-    text-transform: none;
+    text-transform: uppercase;
   }
 }
 .hero-container__pjrtail2 {
@@ -228,7 +237,7 @@
   font-size: 48px;
   text-align: unset;
   letter-spacing: 0.04em;
-  text-transform: none;
+  text-transform: uppercase;
   color: #d41443;
   margin-bottom: 25px;
 
@@ -238,7 +247,7 @@
     font-size: 34px;
     text-align: unset;
     letter-spacing: 0.04em;
-    text-transform: none;
+    text-transform: uppercase;
   }
   @media screen and (min-width: 1280px) {
     line-height: 0.9;
@@ -246,7 +255,7 @@
     font-size: 58px;
     text-align: unset;
     letter-spacing: 0.04em;
-    text-transform: none;
+    text-transform: uppercase;
   }
 }
 .hero__title-buttons {
@@ -272,6 +281,7 @@
   margin-right: 10px;
   background-color: #d41443;
   color: #ffffff;
+  transition: var(--duration) var(--timing-function);
 
   @media screen and (min-width: 1280px) {
     width: 104px;
@@ -310,6 +320,7 @@
   text-transform: none;
   background-color: #ffffff;
   color: #d41443;
+  transition: var(--duration) var(--timing-function);
 
   @media screen and (min-width: 1280px) {
     width: 138px;
@@ -599,5 +610,15 @@
 
   100% {
     transform: translateZ(0);
+  }
+}
+.next-slide {
+  border-radius: 50%;
+  border: none;
+
+  &icon {
+    height: 5px;
+    width: 5px;
+    fill: #d41443;
   }
 }
