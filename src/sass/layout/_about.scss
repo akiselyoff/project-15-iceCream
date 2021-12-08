@@ -293,6 +293,9 @@
 
   @media screen and (min-width: 320px) {
     width: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
   }
 
   @media screen and (min-width: 480px) {
@@ -334,6 +337,7 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--section-background-color);
+   text-shadow: 2px 2px 2px var(--second-text-color);
 
   @media screen and (min-width: 480px) {
     font-size: 28px;
@@ -350,7 +354,8 @@
   font-size: 18px;
   line-height: 1.17;
 
-  color: var (--second-text-color);
+  color: var(--second-text-color);
+  text-shadow: 1px 1px 1px var(--section-background-color);
 
   @media screen and (min-width: 480px) {
     font-size: 20px;
