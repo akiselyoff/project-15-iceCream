@@ -26,7 +26,7 @@
     background-image: none;
   }
 
-  @media screen and (min-width: 1280px) and (max-width: 1920px){
+  @media screen and (min-width: 1280px) and (max-width: 1920px) {
     background-image: url('/images/milk-pc.png');
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -258,7 +258,6 @@
   margin-left: 14px;
 }
 
-
 .about__backdrop {
   position: fixed;
   top: 0;
@@ -300,7 +299,7 @@
   opacity: 1;
   border-radius: 10px;
 
-  background-color:#fcd6d8;
+  background-color: #fcd6d8;
 
   transition-property: transform, opacity;
   transition-duration: var(--duration);
@@ -327,6 +326,30 @@
 
   @media screen and (min-width: 768px) {
     width: 700px;
+
+    background-image: url('/images/milk-ice-cream-tb.png');
+    background-position: right 0 bottom 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/images/milk-ice-cream-tb@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('/images/milk-ice-cream-pc.png');
+    background-position: right 0 bottom 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/images/milk-ice-cream-pc@2x.png');
+    }
   }
 }
 .about__modal_close-button {
@@ -339,13 +362,13 @@
   padding: 0;
   width: 30px;
   height: 30px;
-  
+
   fill: var(--section-background-color);
   background-color: var(--first-text-color);
 
   border: none;
-border-radius: 50%;
-box-shadow: 0px 1px 2px rgb(53, 29, 29);
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px rgb(53, 29, 29);
 
   &:focus,
   &:hover {
@@ -360,7 +383,7 @@ box-shadow: 0px 1px 2px rgb(53, 29, 29);
   line-height: 1.17;
 
   text-align: left;
-  text-transform:  uppercase;
+  text-transform: uppercase;
   color: var(--first-text-color);
   text-shadow: 2px 2px 4px rgb(53, 29, 29);
 
