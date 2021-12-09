@@ -120,6 +120,7 @@
     letter-spacing: 0.04em;
     color: var(--second-background-and-text-color);
     background-color:#F0D1A5 ;
+    border-radius: 6px;
     
     @media screen and (max-width: 767px) {
         font-size: 12px;
@@ -154,6 +155,7 @@
     letter-spacing: 0.04em;
     color: var(--second-background-and-text-color);
     background-color:#C2E297 ;
+    border-radius: 6px;
     
     @media screen and (max-width: 767px) {
         font-size: 12px;
@@ -469,3 +471,187 @@
         margin-left: 14px ;
     }
 }
+
+// franchise-modal
+
+.contacts-backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left:0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: visibility var(--duration) var(--timing-function), opacity var(--duration) var(--timing-function);
+    
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+.francise-modal__btn-close {
+    position: absolute;
+    border: none;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--second-background-and-text-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color var(--duration) var(--timing-function);
+
+    &:focus,
+    &:hover {
+        fill: var(--accent-and-text-color);
+    }
+
+}
+
+.franchise-modal {
+    position: absolute;
+    background-color:var(--background-and-text-color);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+
+    @media screen and (max-width: 479px) {
+      width: calc(100% - 30px);
+      height: 700px;
+      padding: 40px 20px;
+
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 700px;
+      }
+    
+      @media screen and (min-width: 1280px) {
+        width: 600px;
+        height: 700px;
+      
+      }
+}
+
+.franchise-modal__head {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: var(--second-background-and-text-color);
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        line-height: 1.5;
+      }
+    
+    @media screen and (min-width: 768px) {
+        line-height: 1.5;
+      }
+    
+    @media screen and (min-width: 1280px) {
+        line-height: 1.15;
+      }
+}
+.franchise-modal__field {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--second-text-color);
+}
+
+.franchise-modal__wrapper {
+    position: relative;
+    display: block;
+    font-size: 0;
+    margin-top: 4px;
+}
+.franchise-modal__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: border-color var(--duration) var(--timing-function);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-and-text-color);
+    }
+}
+
+.franchise-modal__icon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%) ;
+    transition: fill var(--duration) var(--timing-function);
+
+    .franchise-modal__input:focus + & {
+        fill: var(--accent-and-text-color);
+    }
+}
+
+.franchise-modal__message-field {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--second-text-color);
+    margin-bottom: 20px;
+}
+.franchise-modal__message {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    padding: 16px 12px;
+    margin-top: 4px;
+    transition: border-color var(--duration) var(--timing-function);
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-and-text-color);
+    }
+}
+
+.franchise-modal__btn {
+    display: block;
+    border: none;
+    width: 100px;
+    height: 50px;
+    background: var(--second-background-and-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--second-text-color);
+    padding: 5px auto;
+    margin: 0 auto;
+
+    &:focus,
+    &:hover {
+        color: var(--accent-and-text-color);
+
+    }
+}
+
+
