@@ -49,14 +49,17 @@
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+  width: 280px;
 
   @media screen and (min-width: 768px) {
     padding: 47px 80px 34px 80px;
     margin-bottom: 24px;
+    width: 620px;
   }
   @media screen and (min-width: 1280px) {
     padding: 47px 89px 39px 87px;
     margin-bottom: 15px;
+    width: 926px;
   }
 }
 
@@ -135,13 +138,18 @@
   position: relative;
   margin-bottom: 30px;
   padding: 18px 54px 0px 54px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     padding: 18px 54px 0px 54px;
     margin-bottom: 35px;
+    width: 620px;
   }
   @media screen and (min-width: 1280px) {
     padding: 14px 264px 0px 264px;
+    width: 926px;
   }
 }
 .customer-reviews__sign {
