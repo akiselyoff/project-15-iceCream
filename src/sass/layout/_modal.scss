@@ -196,7 +196,8 @@
 
 .modal-input {
   background: transparent;
-  border: transparent;
+  /*border: transparent;*/
+  border: 1px solid var(--background-and-text-color);
   width: 100%;
   height: 30px;
   padding-left: 42px;
@@ -270,6 +271,7 @@
 .checkbox-icon:hover,
 .checkbox-default:focus-within + .checkbox-icon {
   border-color: var(--background-and-text-color);
+  outline: 2px solid #d41443;
 }
 
 .checkbox-default:checked + .checkbox-icon {
@@ -277,6 +279,7 @@
   border-color: transparent;
   background-size: contain;
   transform: scale(1.37);
+  outline-style: none;
 }
 
 .checkbox-icon {
