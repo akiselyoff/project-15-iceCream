@@ -240,15 +240,13 @@
   margin-left: 13.62px;
 }
 
-
-
 .about__backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 100;  
+  z-index: 100;
 
   background-color: rgba(250, 233, 233, 0.8);
   transition-property: visibility, opacity;
@@ -273,31 +271,31 @@
   left: 50%;
 
   margin-left: auto;
-    margin-right: auto;
-  
+  margin-right: auto;
+
   padding: 20px;
   transform: translate(-50%, -50%) scale(1);
   border-radius: 10px;
-  
 
-  background-color: var(--first-text-color);
+  background-color: #e17992;
   transition-property: transform, opacity;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 
-background-image: url('/images/milk-ice-cream.png');
-    background-position: right 0 bottom 40px;
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url('/images/milk-ice-cream.png');
+  background-position: right 0 bottom 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
 
-        @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('/images/milk-ice-cream@2x.png');
-    }
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/images/milk-ice-cream@2x.png');
+  }
 
   @media screen and (min-width: 320px) {
     width: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
   }
 
   @media screen and (min-width: 480px) {
@@ -310,8 +308,8 @@ background-image: url('/images/milk-ice-cream.png');
 }
 .about__modal_close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,6 +321,11 @@ background-image: url('/images/milk-ice-cream.png');
   fill: var(--accent-and-text-color);
   background-color: var(--section-background-color);
   border: none;
+
+  &:focus,
+  &:hover {
+    background-color: var(--first-text-color);
+  }
 }
 
 .about__modal_title {
@@ -333,7 +336,8 @@ background-image: url('/images/milk-ice-cream.png');
 
   text-align: center;
   text-transform: uppercase;
-  color: var(--accent-and-text-color);
+  color: var(--section-background-color);
+   text-shadow: 2px 2px 2px var(--second-text-color);
 
   @media screen and (min-width: 480px) {
     font-size: 28px;
@@ -351,6 +355,7 @@ background-image: url('/images/milk-ice-cream.png');
   line-height: 1.17;
 
   color: var(--second-text-color);
+  text-shadow: 1px 1px 1px var(--section-background-color);
 
   @media screen and (min-width: 480px) {
     font-size: 20px;
@@ -385,6 +390,6 @@ background-image: url('/images/milk-ice-cream.png');
 
   &:focus,
   &:hover {
-    background-color: var(--second-background-and-text-color);
+    background-color: var(--first-text-color);
   }
 }
